@@ -1,0 +1,45 @@
+header {
+    color: var(--very-dark-blue-text);
+    transition: 0.4s ease-in-out;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.dark-mode-btn {
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+    color: var(--very-dark-blue-text);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dark-mode-btn span {
+    padding-right: 8px;
+    transition: 0.4s ease-in-out;
+}
+
+.dark-mode-btn:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 18px;
+    }
+    .dark-mode-btn {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header h1 {
+        font-size: 13px;
+    }
+    .dark-mode-btn {
+        font-size: 13px;
+    }
+}

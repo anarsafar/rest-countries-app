@@ -1,0 +1,23 @@
+.dark-body {
+    background: var(--very-dark-blue) !important;
+    color: var(--white) !important;
+}
+
+.dark-elements {
+    background: var(--dark-blue) !important;
+    color: var(--white) !important;
+}
+
+.light-body {
+    background: var(--very-light-gray) !important;
+    color: var(--very-dark-blue-text) !important;
+}
+
+.light-elements {
+    background: var(--white) !important;
+    color: var(--very-dark-blue-text) !important;
+}
+
+.dark-input::placeholder {
+    color: var(--white);
+}
