@@ -25,7 +25,7 @@ class SearchandFilter extends Component {
 
     handleSubmit =(e)=>{
         const {searchCountry} = this.state
-        fetch(`https://restcountries.eu/rest/v2/name/${searchCountry}`)
+        fetch(`https://restcountries.com/v3.1/name/${searchCountry}`)
         .then(response=>response.json())
         .then(response=>this.setState({responseCountry:response}))
         .catch(err=>console.log(err))
