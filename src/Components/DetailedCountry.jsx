@@ -25,7 +25,7 @@ class DetailedCountry extends Component {
 
     handleBorders = () =>{
         this.props.location.info.borders.map(item=>{
-            fetch(`https://restcountries.eu/rest/v2/alpha?codes=${item}`)
+            fetch(`https://restcountries.com/v3.1/alpha?codes=${item}`)
             .then(response=>response.json())
             .then(response=>this.setState({
                 borderCountriesResponse:[...this.state.borderCountriesResponse,response]
