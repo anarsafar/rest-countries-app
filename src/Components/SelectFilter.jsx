@@ -18,7 +18,7 @@ class SelectFilter extends Component {
   handleChange = selectedOption => {
     this.setState({ selectedOption });
     // console.log(`Option selected:`, selectedOption);
-    fetch(`https://restcountries.eu/rest/v2/region/${selectedOption.value}`)
+    fetch(`https://restcountries.com/v3.1/region/${selectedOption.value}`)
         .then(response=>response.json())
         .then(response=>{
             this.props.parentCallback(response)
